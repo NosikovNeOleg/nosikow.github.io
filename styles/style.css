@@ -1,6 +1,7 @@
 .main { 
     font-family: Courier; 
     text-align: center;
+    padding: 5px;
 }
 
 .buttonvk{
@@ -12,11 +13,26 @@
     border: 2px solid;
     padding: 0px 0px;
     border-radius: 10px;
-    top: 600px
+    top: 139px
 }
 
 .textvk{
     position: absolute;
     left: 40px;
     bottom: 10px;
+    font-weight: bolder;
 }
+
+.myface{
+    text-align: center;
+}
+
+.bottomcase{
+    position: absolute;
+    bottom: 1px;
+}
+body{
+    background: rgb(136,198,221);
+    background: linear-gradient(56deg, rgba(136,198,221,1) 0%, rgba(255,244,207,1) 48%, rgba(241,150,135,1) 100%);background-repeat: no-repeat;
+    background-position: left bottom;
+}   
