@@ -6,14 +6,51 @@
 
 .buttonvk{
     position: absolute;
-    background-color:  linear-gradient(135deg,#4169E1 50%,#FFFFFF 50%);
+    background-color: white;
     width: 75px;
     height: 40px;
     border-color:black;
     border: 2px solid;
     padding: 0px 0px;
     border-radius: 10px;
-    top: 139px
+    top: 139px;
+    box-shadow: 1px 4px 4px 0px gray;
+    left: 20px;
+}
+
+.buttonvk:hover{
+    animation: butvk 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes butvk {
+    from{position: absolute;
+
+    }
+    to {
+        box-shadow: 1px 8px 8px 0px gray;
+        transform: scale(1.2); 
+        
+    }
+}
+
+.buttonTW{
+    position: absolute;
+    background-color: white;
+    width: 95px;
+    height: 45px;
+    border-color:black;
+    border: 2px solid;
+    padding: 0px 0px;
+    border-radius: 10px;
+    top: 204px;
+    box-shadow: 1px 4px 4px 0px gray;
+    left: 20px;
+}
+
+.buttonTW:hover{
+    animation: butvk 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .textvk{
@@ -23,6 +60,12 @@
     font-weight: bolder;
 }
 
+.texttw{
+    position: absolute;
+    left: 40px;
+    bottom: 13px;
+    font-weight: bolder;
+}
 .myface{
     text-align: center;
 }
@@ -31,8 +74,8 @@
     position: absolute;
     bottom: 1px;
 }
-body{
-    background: rgb(136,198,221);
-    background: linear-gradient(56deg, rgba(136,198,221,1) 0%, rgba(255,244,207,1) 48%, rgba(241,150,135,1) 100%);background-repeat: no-repeat;
-    background-position: left bottom;
-}   
+
+a:visited{
+    color: black;
+}
+
