@@ -1,0 +1,22 @@
+.main { 
+    position: absolute;
+    font-family: Courier; 
+    text-align: center;
+    left: 700px;
+}
+
+.buttonvk{
+    position: absolute;
+    background-color:  linear-gradient(135deg,#4169E1 50%,#FFFFFF 50%);
+    width: 75px;
+    height: 40px;
+    border-color:black;
+    border: 2px solid;
+    padding: 0px 0px;
+    border-radius: 10px;
+    top: 600px
+}
+
+.textvk{
+    position: absolute;
+}
