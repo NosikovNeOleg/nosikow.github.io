@@ -4,9 +4,12 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Nosikow</title>
   <link rel="stylesheet" type="text/css" href="styles\style.css">
-  
+  <script src="scripts/dragNdrop.js"></script>
+  <div class="rofl">
+    Место под Вашу рекламу!
+</div>
  </head>
- <body>
+ <body >
 
 
 <div class="background">
@@ -19,48 +22,57 @@
     <img class="myface" src='ya.jpg' width=270px>
  </div>
 
- <div class="textabout">
-    Приветствую! Данная страничка характеризует моё знание html + css. <br>
+<div id="block" class="textabout" onmousedown="meow()" >
+    Приветствую! Данная страничка характеризует моё знание html + css + js. <br>
     Для связи со мной нажмите на интересующую вас соцсеть слева.
     <br>
 </div>
-    <div class="textabout2">
+
+<div id="block2" class="textabout2" onmousedown="meow2()">
     Я студент из Перми. Обучаюсь на "Прикладную информатику в экономике".<br>
     В свободное время провожу стримы на своём Твич-канале, а также занимаюсь программированием.<br>
+</div>
 
- </div>
+<img src="arrow.png" width="140px" class="arrow">
+<div class="drugNdrop">
+    Это можно подвинуть!
+</div>
 
- <div class="leftbar">
-<a href="https://vk.com/nosikow" target="_blank">
- <div class="buttonvk">
-    <img src="vk.png" width="40px">
-    <div class="textvk"> VK </div>
- </div>
-</a>
-
-<a href="https://www.twitch.tv/nosikow" target="_blank">
-    <div class="buttonTW">
-        <img src="tw.png" width="40px">
-        <div class="texttw"> Twitch </div>
-
+<div class="leftbar preload">
+    <div class="leftbarbutton preload" onmousedown="leftbaropen()" >
+        <img src="leftsidebut.png" width="25px" >
     </div>
-</a>
 
-<a href="https://github.com/NosikovNeOleg" target="_blank">
-    <div class="buttonGIT">
-        <img class="pnggit" src="git.png" width="40px">
-        <div class="textgit"> GitHub </div>
-
+    <a href="https://vk.com/nosikow" target="_blank">
+    <div class="buttonvk">
+        <img src="vk.png" width="40px">
+        <div class="textvk"> VK </div>
     </div>
-</a>
+    </a>
+
+    <a href="https://www.twitch.tv/nosikow" target="_blank">
+        <div class="buttonTW">
+            <img src="tw.png" width="40px">
+            <div class="texttw"> Twitch </div>
+
+        </div>
+    </a>
+
+    <a href="https://github.com/NosikovNeOleg" target="_blank">
+        <div class="buttonGIT">
+            <img class="pnggit" src="git.png" width="30px">
+            <div class="textgit"> GitHub </div>
+
+        </div>
+    </a>
 
 </div>
-<div class="rofl">
-    Место под Вашу рекламу!
-</div>
 
-<div class="leftbar">
 
-</div>
+
+
  </body>
+
+
 </html>  
+

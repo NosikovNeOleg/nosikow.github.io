@@ -1,7 +1,7 @@
 .main { 
     position: absolute;
     font-family: Courier; 
-    left: 200px;
+    left: 100px;
     padding: 5px;
     text-align: center;
     border: 2px solid;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     background: rgb(246,242,104);
     background: linear-gradient(142deg, rgba(246,242,104,0.39539565826330536) 0%, rgba(113,202,228,0.7791491596638656) 47%, rgba(139,249,113,0.3029586834733894) 100%);
-
+    box-shadow: 5px 0px 20px 0px rgb(63, 63, 63);
 }
 
 .rofl{
@@ -44,11 +44,86 @@
 .leftbar{
     position: absolute;
     overflow: hidden;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(188, 255, 213);
+    left: 0px;
+    top: 0px;
     height: 100%;
-    width: 150px;
+    width: 30px;
+    border: 2px solid;
+    box-shadow: 5px 0px 15px 0px rgb(63, 63, 63);
     border-radius: 0px 15px 15px 0px;
+    animation: leftbarclose 2s;
+    animation-fill-mode: forwards;
+    
 }
+
+
+.leftbar2{
+    animation: leftbaropen 2s;
+    animation-fill-mode: forwards;
+}
+
+.preload {
+    animation: none !important;
+  }
+
+@keyframes leftbaropen{
+    0%{width: 30px;}
+    100% {width: 160px;}
+}
+@keyframes leftbarclose{
+    0%{width: 160px;
+        }
+    100% {width: 30px;
+        }
+}
+
+
+.leftbarbutton{
+    position: absolute;
+    z-index: 2;
+    left: 1px;
+    top: 10px;
+    animation: leftbarbutrotate2 2s;
+}
+
+.leftbarbutton2{
+    animation: leftbarbutrotate 2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes leftbarbutrotate{
+    from{
+        left: 1px;
+        top: 10px;
+        transform: rotate(0deg);
+    }
+    to{
+        left: 130px;
+        top: 10px;
+    transform: rotate(180deg);
+    }
+}
+
+@keyframes leftbarbutrotate2{
+    from{
+        left: 130px;
+        top: 10px;
+    transform: rotate(180deg);
+}
+    to{
+    left: 1px;
+    top: 10px;
+    transform: rotate(0deg);
+    }
+}
+
+.leftbarbutton:hover{
+    cursor: pointer;
+}
+
+
 
 .textabout{
     font-family: Courier; 
@@ -63,6 +138,7 @@
     rgb(188, 219, 255) 100%);
     width: 300px;
 }
+
 .textabout2{
     font-family: Courier; 
     position: absolute;
@@ -76,8 +152,18 @@
     box-shadow: 10px 10px 15px 0px rgba(103, 99, 179, 0.616);
     width: 300px;
 }
+
+.textabout:hover{
+    cursor: pointer;
+}
+
+.textabout2:hover{
+    cursor: pointer;
+}
+
+
 .buttonvk{
-    position: fixed;
+    position: absolute;
     z-index: 2;
     background-color: white;
     width: 75px;
@@ -86,9 +172,10 @@
     border: 2px solid;
     padding: 0px 0px;
     border-radius: 10px;
-    top: 139px;
-    box-shadow: 1px 4px 4px 0px gray;
-    left: 20px;
+    top: 183px;
+    box-shadow: 1px 4px 4px 0px rgb(3, 3, 3);
+    left: 36px; 
+    
 }
 
 .buttonvk:hover{
@@ -97,24 +184,24 @@
 }
 
 .buttonGIT{
-    position: fixed;
+    position: absolute;
     z-index: 2;
     background-color: white;
-    width: 110px;
-    height: 50px;
+    width: 100px;
+    height: 45px;
     border-color:black;
     border: 2px solid;
     padding: 0px 0px;
     border-radius: 10px;
-    top: 273px;
-    box-shadow: 1px 4px 4px 0px gray;
-    left: 20px;  
+    top: 43px;
+    box-shadow: 1px 4px 4px 0px rgb(3, 3, 3);
+    left: 36px;  
 }
 
 .pnggit{
     position: absolute;
-    top:4px;
-    left:2px;
+    top:7px;
+    left:6px;
 }
 
 .buttonGIT:hover{
@@ -124,7 +211,7 @@
 
 
 .buttonTW{
-    position: fixed;
+    position: absolute;
     z-index: 2;
     background-color: white;
     width: 95px;
@@ -133,9 +220,9 @@
     border: 2px solid;
     padding: 0px 0px;
     border-radius: 10px;
-    top: 204px;
-    box-shadow: 1px 4px 4px 0px gray;
-    left: 20px;
+    top: 113px;
+    box-shadow: 1px 4px 10px 0px rgb(3, 3, 3);
+    left: 36px;
 }
 
 .buttonTW:hover{
@@ -148,11 +235,12 @@
 
     }
     to {
-        box-shadow: 1px 8px 8px 0px gray;
-        transform: scale(1.2); 
-        
+        box-shadow: 1px 8px 8px 0px rgb(39, 39, 39);
+        transform: scale(1.1); 
     }
 }
+
+
 
 .textvk{
     
@@ -191,3 +279,17 @@ a:visited{
     color: black;
 }
 
+
+.drugNdrop{
+    position: absolute;
+    left: 900px;
+    top: 100px;
+    transform: rotate(20deg);
+}
+
+.arrow{
+    position: absolute;
+    left: 780px;
+    top: 50px;
+    transform: rotate(-20deg);
+}
