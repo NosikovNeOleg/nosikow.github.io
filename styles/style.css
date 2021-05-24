@@ -1,11 +1,84 @@
 .main { 
+    position: absolute;
     font-family: Courier; 
-    text-align: center;
+    left: 200px;
     padding: 5px;
+    text-align: center;
+    border: 2px solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    background: rgb(246,242,104);
+    background: linear-gradient(142deg, rgba(246,242,104,0.39539565826330536) 0%, rgba(113,202,228,0.7791491596638656) 47%, rgba(139,249,113,0.3029586834733894) 100%);
+
 }
 
-.buttonvk{
+.rofl{
+    animation: rofl 3s;
+    animation-iteration-count: infinite;
     position: absolute;
+    left: 1300px;
+    top: 300px;
+}
+
+@keyframes rofl{
+    0% {
+        transform: scale(1);
+        transform: rotate(30deg);
+}
+    25%{
+        transform: scale(1.1);
+}
+    50% {
+        transform: scale(1);
+        transform: rotate(-30deg);
+}
+    75%{
+        transform: scale(1.1);
+    }
+    100%{transform: scale(1);
+        transform: rotate(30deg)}
+}
+
+.leftbar{
+    position: absolute;
+    overflow: hidden;
+    background-color: rgb(143, 143, 143);
+    height: 100%;
+    width: 150px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.textabout{
+    font-family: Courier; 
+    position: absolute;
+    left: 600px;
+    top: 125px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 5px solid rgb(124, 122, 255);
+    box-shadow: 10px 10px 15px 0px rgba(103, 99, 179, 0.616);
+    background: linear-gradient(90deg, rgb(197, 193, 255) 0%,
+    rgb(188, 219, 255) 100%);
+    width: 300px;
+}
+.textabout2{
+    font-family: Courier; 
+    position: absolute;
+    left: 600px;
+    top: 255px;
+    padding: 5px;
+    border-left: 5px solid rgb(124, 122, 255);
+    background: linear-gradient(90deg, rgb(197, 193, 255) 0%,
+    rgb(188, 219, 255) 100%);
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 10px 10px 15px 0px rgba(103, 99, 179, 0.616);
+    width: 300px;
+}
+.buttonvk{
+    position: fixed;
+    z-index: 2;
     background-color: white;
     width: 75px;
     height: 40px;
@@ -23,19 +96,36 @@
     animation-fill-mode: forwards;
 }
 
-@keyframes butvk {
-    from{position: absolute;
-
-    }
-    to {
-        box-shadow: 1px 8px 8px 0px gray;
-        transform: scale(1.2); 
-        
-    }
+.buttonGIT{
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+    width: 110px;
+    height: 50px;
+    border-color:black;
+    border: 2px solid;
+    padding: 0px 0px;
+    border-radius: 10px;
+    top: 273px;
+    box-shadow: 1px 4px 4px 0px gray;
+    left: 20px;  
 }
 
-.buttonTW{
+.pnggit{
     position: absolute;
+    top:4px;
+    left:2px;
+}
+
+.buttonGIT:hover{
+    animation: butvk 0.5s;
+    animation-fill-mode: forwards;
+}
+
+
+.buttonTW{
+    position: fixed;
+    z-index: 2;
     background-color: white;
     width: 95px;
     height: 45px;
@@ -52,8 +142,20 @@
     animation: butvk 0.5s;
     animation-fill-mode: forwards;
 }
- 
+
+@keyframes butvk {
+    from{position: absolute;
+
+    }
+    to {
+        box-shadow: 1px 8px 8px 0px gray;
+        transform: scale(1.2); 
+        
+    }
+}
+
 .textvk{
+    
     position: absolute;
     left: 40px;
     bottom: 10px;
@@ -66,9 +168,19 @@
     bottom: 13px;
     font-weight: bolder;
 }
+
+.textgit{
+    position: absolute;
+    left: 45px;
+    bottom: 13px;
+    font-weight: bolder;
+}
+
 .myface{
     text-align: center;
+    box-shadow: 15px 10px 2 0px 0px gray;
 }
+
 
 .bottomcase{
     position: absolute;
