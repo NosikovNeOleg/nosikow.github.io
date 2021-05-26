@@ -52,14 +52,14 @@
     border: 2px solid;
     box-shadow: 5px 0px 15px 0px rgb(63, 63, 63);
     border-radius: 0px 15px 15px 0px;
-    animation: leftbarclose 2s;
+    animation: leftbarclose 1s;
     animation-fill-mode: forwards;
     
 }
 
 
 .leftbar2{
-    animation: leftbaropen 2s;
+    animation: leftbaropen 1s;
     animation-fill-mode: forwards;
 }
 
@@ -84,11 +84,11 @@
     z-index: 2;
     left: 1px;
     top: 10px;
-    animation: leftbarbutrotate2 2s;
+    animation: leftbarbutrotate2 1s;
 }
 
 .leftbarbutton2{
-    animation: leftbarbutrotate 2s;
+    animation: leftbarbutrotate 1s;
     animation-fill-mode: forwards;
 }
 
