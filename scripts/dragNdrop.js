@@ -36,21 +36,21 @@ function meow() {
     return false;
   };
 
-  function meow2() {
+  function meow3() {
 
-    let shiftX = event.clientX - block2.getBoundingClientRect().left;
-    let shiftY = event.clientY - block2.getBoundingClientRect().top;
+    let shiftX = event.clientX - block3.getBoundingClientRect().left;
+    let shiftY = event.clientY - block3.getBoundingClientRect().top;
   
-    block2.style.position = 'absolute';
-    block2.style.zIndex = 1000;
-    document.body.append(block);
+    block3.style.position = 'absolute';
+    block3.style.zIndex = 1000;
+    document.body.append(block3);
   
     moveAt(event.pageX, event.pageY);
   
 
     function moveAt(pageX, pageY) {
-        block2.style.left = pageX - shiftX + 'px';
-        block2.style.top = pageY - shiftY + 'px';
+        block3.style.left = pageX - shiftX + 'px';
+        block3.style.top = pageY - shiftY + 'px';
     }
   
     function onMouseMove(event) {
@@ -61,16 +61,18 @@ function meow() {
     document.addEventListener('mousemove', onMouseMove);
   
     
-    block2.onmouseup = function() {
+    block3.onmouseup = function() {
       document.removeEventListener('mousemove', onMouseMove);
-      block2.onmouseup = null;
+      block3.onmouseup = null;
     };
   
   };
   
-  block2.ondragstart = function() {
+  block3.ondragstart = function() {
     return false;
   };
+
+
 
 
 
