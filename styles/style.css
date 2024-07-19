@@ -175,6 +175,10 @@
     cursor: pointer;
 }
 
+.textabout3:hover{
+    cursor: pointer;
+}
+
 
 .buttonvk{
     position: absolute;
