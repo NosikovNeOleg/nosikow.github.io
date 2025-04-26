@@ -3,12 +3,9 @@
 import "./styles.css"
 import ImageCard from "@/components/ui/image-card";
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { useState } from "react";
 
 
 export default function Home() {
-  const [isLeftBarVisible, setIsLeftBarVisible] = useState(false);
-
 
   return (
     <div className="relative min-h-screen">
